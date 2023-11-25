@@ -1,4 +1,4 @@
-package models;
+package models.option1;
 
 
 import org.junit.jupiter.api.BeforeEach;
@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-public class LoadBalancerTest {
+class LoadBalancerTest {
     private LoadBalancer lb;
 
     @BeforeEach
@@ -15,7 +15,7 @@ public class LoadBalancerTest {
     }
 
     @Test
-    public void testAddingResources() {
+    void testAddingResources() {
         lb.addResource("url1");
         lb.addResource("url2");
         lb.addResource("url3");
@@ -25,12 +25,12 @@ public class LoadBalancerTest {
     }
 
     @Test
-    public void testEmptyLoadBalancer() {
+    void testEmptyLoadBalancer() {
         assertThrows(IllegalStateException.class, () -> lb.next());
     }
 
     @Test
-    public void testSingleResourceLoop() {
+    void testSingleResourceLoop() {
         lb.addResource("url1");
         assertEquals("url1", lb.next());
         assertEquals("url1", lb.next());
@@ -38,7 +38,7 @@ public class LoadBalancerTest {
     }
 
     @Test
-    public void testAddingManyResources() {
+    void testAddingManyResources() {
         // Adding a large number of resources
         for (int i = 0; i < 1000; i++) {
             lb.addResource("url" + i);
@@ -50,7 +50,7 @@ public class LoadBalancerTest {
     }
 
     @Test
-    public void testNullResource() {
+    void testNullResource() {
         lb.addResource(null);
         // Expecting the load balancer to handle null resource gracefully
         assertDoesNotThrow(() -> lb.next());

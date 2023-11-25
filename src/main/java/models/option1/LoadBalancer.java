@@ -1,10 +1,10 @@
-package models;
+package models.option1;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class LoadBalancer {
-    private List<String> resources;
+    private final List<String> resources;
     private int currentIndex;
 
     public LoadBalancer() {

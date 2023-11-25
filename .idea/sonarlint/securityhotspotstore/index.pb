@@ -3,9 +3,21 @@ V
 &src/main/java/models/LoadBalancer.java,b\5\b5d9a5c4dfc3f1f50da70d504db9eef1ab9782ec
 G
 src/main/java/Main.java,e\4\e44a8606ce010ad9b89aafdfcee2ab49afbf6d10
-W
-'src/main/java/models/LoadBalancer2.java,e\c\ec6e47866821d8f7d4553d3b46f0994df2065295
 P
  src/main/java/LoadBalancer2.java,d\6\d65528c5a6b4e33d3a3dc1b4c496ce7fb6136df5
 Z
 *src/test/java/models/LoadBalancerTest.java,0\c\0cc99814ff9a429b37a83aa7533bbd9cc0013e55
+_
+/src/main/java/models/option2/LoadBalancer2.java,9\d\9d18deed842bb07baee9c6628281a809b4d3f673
+V
+&src/main/java/models/option2/Main.java,9\f\9f35dde34980781881f7d2c21738de841de21661
+V
+&src/main/java/models/option1/Main.java,7\4\7405ea2e1444db0727e0397554d029f39d1c16d7
+^
+.src/main/java/models/option1/LoadBalancer.java,c\e\ce3e5befdf4983821c27dfb47b592d93ff78fe27
+b
+2src/test/java/models/option1/LoadBalancerTest.java,5\4\54b4f994254584007a6aa8c10307ac9c151829fa
+c
+3src/test/java/models/option2/LoadBalancer2Test.java,8\2\8270bd9032adfc0639216967febd0dd8512b991f
+9
+	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
